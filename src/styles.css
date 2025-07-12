@@ -3,6 +3,7 @@ body {
     width: 50%;
     background-color: rgb(245, 248, 245);
     margin: 7% auto 0 auto;
+    color: rgb(34, 44, 29);
 }
 
 header {
@@ -27,7 +28,7 @@ main form input {
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(93, 99, 90);
 }
 
 main form input:first-child {
@@ -36,6 +37,8 @@ main form input:first-child {
 
 main form input:nth-child(2) {
     width: 20%;
+    background-color: white;
+
 }
 
 main div {
