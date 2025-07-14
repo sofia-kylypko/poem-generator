@@ -20,7 +20,7 @@ const generatePoem = (event) => {
 
     let key = "dc4fa97dd0aa64407o93bea76f4taaab";
     let context = "answer should be maximum 3 paragraphs long, well structured and be readable and fully followed to what was asked in prompt. if no topic was given just ask to provide them";
-    let prompt = `generate a short poem on a ${instructions}  topic`;
+    let prompt = `generate a short story on a ${instructions}  topic`;
     let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
     console.log("generating");
