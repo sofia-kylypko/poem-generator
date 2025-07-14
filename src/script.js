@@ -2,14 +2,15 @@
 
 const displayResponse = (response) => {
     console.log(response);
+    document.querySelector("#response").classList.add("active");
     new Typewriter("#response", {
         autoStart: true,
         delay: 5,
         cursor: ""
-    }).typeString(response.data.answer + '<br> SheCodes AI')
-        // ⛔ do NOT call .pauseFor() or .deleteAll()
+    }).typeString(response.data.answer + '<br/><br/><strong>SheCodes AI</strong>')
         .start();;
 }
+
 const generatePoem = (event) => {
     event.preventDefault();
 
@@ -23,6 +24,10 @@ const generatePoem = (event) => {
     let url = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
     console.log("generating");
+
+    let requestField = document.querySelector("#request");
+    document.querySelector("#request").classList.add("showedRequest");
+    requestField.innerHTML = `Generate a short poem on a ${instructions} topic`;
 
     axios.get(url).then(displayResponse);
 }

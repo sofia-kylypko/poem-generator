@@ -37,13 +37,50 @@ main form input:first-child {
 
 main form input:nth-child(2) {
     width: 20%;
-    background-color: white;
+    border-color: rgb(154, 184, 154);
+    background-color: rgb(207, 230, 207);
+    transition: 0.2s ease-in-out;
+}
 
+main form input:nth-child(2):hover {
+    width: 20%;
+    border-color: rgb(214, 233, 214);
+    background-color: white;
 }
 
 main div {
+    margin-top: -20px;
     text-align: center;
     font-size: medium;
+    font-size: large;
+}
+
+main #example {
+    display: block;
+    margin: -75px auto auto 5px;
+    color: gray;
+}
+
+main #response {
+    margin-top: 60px;
+}
+
+main .showedRequest {
+    width: 70%;
+    margin: 40px auto 30px 0px;
+    text-align: left;
+    padding: 15px 20px;
+    background-color: rgb(207, 230, 207);
+    border-radius: 20px;
+}
+
+main .active {
+    width: 70%;
+    margin: 20px 0px auto auto !important;
+    text-align: right;
+    padding: 15px 20px;
+    background-color: rgb(207, 230, 207);
+    border-radius: 20px;
 }
 
 footer {
@@ -52,4 +89,14 @@ footer {
     bottom: 25px;
     width: 50%;
     text-align: center;
+}
+
+footer a {
+    color: rgb(16, 85, 16);
+}
+
+footer a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-style: italic;
 }
